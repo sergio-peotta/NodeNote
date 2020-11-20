@@ -42,7 +42,7 @@ var getNote = function(title) {
 
 var printNoteData = (note) => {
     if (note) {
-        console.log('Nota', note);
+        console.log(note);
     } else {
         console.log('La nota esiste già.');
     }

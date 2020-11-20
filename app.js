@@ -20,12 +20,12 @@ if (command === 'add') {
 
 } else if (command === 'list') {
 
-    notes.getAll().forEach(element => { console.log(element); });
+    notes.getAll().forEach(element => { console.log(element.title); });
 
 } else if (command === 'read') {
 
     var note = notes.getNote(argv.title);
-    notes.printNoteData(note);
+    notes.printNoteData(note.body);
 
 } else {
     console.log('Command not recognized');
