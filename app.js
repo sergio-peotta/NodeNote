@@ -7,11 +7,6 @@ const argv = yargs.argv;
 
 var command = argv._[0];
 
-console.log();
-console.log();
-console.log();
-console.log();
-
 if (command === 'add') {
 
     var note = notes.addNote(argv.title, argv.body);
@@ -35,8 +30,3 @@ if (command === 'add') {
 } else {
     console.log('Command not recognized');
 }
-
-console.log();
-console.log();
-console.log();
-console.log();
